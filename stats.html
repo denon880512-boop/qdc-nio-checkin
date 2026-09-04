@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <title>使用统计</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./config.js" defer></script>
+  <script src="./stats.js" defer></script>
+</head>
+<body>
+  <main class="stats-page">
+    <a class="back-link" href="./index.html">← 返回打卡页</a>
+    <header><h1>使用统计</h1><p class="stats-note">当前浏览器 · 从本次更新起记录</p></header>
+    <section class="stats-summary" aria-label="文案数据"><span>文案库总量</span><strong id="total-posts">—</strong><span>组标题与文案</span></section>
+    <p class="stats-note">全站已分配 <span id="allocated-posts">—</span> 组 · 剩余 <span id="remaining-posts">—</span> 组</p>
+    <div class="stats-grid">
+      <section class="stat"><h2>标题复制</h2><p><strong id="title-copies">—</strong><span>次</span></p></section>
+      <section class="stat"><h2>文案复制</h2><p><strong id="content-copies">—</strong><span>次</span></p></section>
+    </div>
+    <p class="stats-note" id="stats-note">仅计入复制成功的操作，包含进入本页前的标题复制。不同设备和浏览器独立记录，清除站点数据会重置次数。</p>
+  </main>
+</body>
+</html>

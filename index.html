@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f7f9">
+  <meta name="description" content="2026东莞蔚乐萤车友年会，看蔚来，听 qdc。生成并复制现场试听分享。">
+  <title>东莞蔚来车友年会 · qdc 试听打卡</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./config.js" defer></script>
+  <script src="./ai.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand-logo"><img src="./assets/logo.png" alt="qdc 明星之选"></div>
+      <h1>看蔚来，听 qdc<br><span>分享现场试听的小惊喜</span></h1>
+      <p class="help">2026东莞蔚乐萤车友年会</p>
+    </header>
+    <section class="card" aria-labelledby="title-label">
+      <div class="label-row"><h2 id="title-label">标题</h2></div>
+      <p id="post-title" class="post-title"></p>
+      <button type="button" class="copy-button" id="copy-title" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg><span>点击复制标题</span></button>
+    </section>
+    <section class="card" aria-labelledby="content-label">
+      <div class="label-row"><h2 id="content-label">文案</h2></div>
+      <p id="post-content" class="post-content" role="status">正在生成 qdc 试听文案…</p>
+      <button type="button" id="retry-load" class="retry-button" hidden>重新连接</button>
+      <button type="button" class="copy-button" id="copy-content" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg><span>点击复制文案</span></button>
+      <p class="help">发布前，请按实际试听体验核对或修改文案。</p>
+    </section>
+    <section class="publish" aria-label="选择发布平台">
+      <p>点击平台图标发表吧！</p>
+      <div class="platforms">
+        <a href="https://www.douyin.com/" data-scheme="snssdk1128://"><span class="platform-icon douyin" aria-hidden="true">♪</span><span>抖音</span></a>
+        <a href="https://www.xiaohongshu.com/" data-scheme="xhsdiscover://"><span class="platform-icon xhs" aria-hidden="true">小红书</span><span>小红书</span></a>
+        <a href="https://www.bilibili.com/" data-scheme="bilibili://"><span class="platform-icon bili" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m10 3 4 5m8-5-4 5M7 9h18a3 3 0 0 1 3 3v13a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V12a3 3 0 0 1 3-3Z"/><path d="M11 16v4m10-4v4"/></svg></span><span>B站</span></a>
+      </div>
+      <p id="platform-help" class="help" hidden>若微信未打开平台，请点击右上角，选择在浏览器中打开。</p>
+    </section>
+    <noscript><p class="help">请开启浏览器 JavaScript 后使用复制与文案轮换功能。</p></noscript>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
